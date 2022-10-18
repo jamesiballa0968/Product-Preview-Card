@@ -7,4 +7,6 @@
 
 2. Implementing Design on the website - UPDATE! v1
 
-3. Added mroe styling on the website - UPDATE! v2
+3. Added a styling on the website - UPDATE! v2
+
+4. Added a reponsive design for mobiles - UPDATE! v3

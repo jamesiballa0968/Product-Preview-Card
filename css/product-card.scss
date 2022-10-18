@@ -13,12 +13,13 @@
 }
 
 body {
-  
   background: hsl(30, 38%, 92%);
   font-size: 0.9rem;
 }
 //BODY
 .attribution {
+  font-family: 'Montserrat';
+  margin: 20px 0px;
   font-size: 11px;
   text-align: center;
 }
@@ -29,13 +30,14 @@ body {
 .card-ctn {
   display: flex;
   max-width: fit-content;
-  margin: auto; 
+  margin: auto;
   margin-top: 20vh;
 
-  
   &__img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+
+    object-fit: cover;
     max-width: 350px;
   }
   &__right-ctn {
@@ -98,7 +100,7 @@ body {
       cursor: pointer;
 
       &.--hover:hover {
-        background:hsl(158, 54%, 18%) ;
+        background: hsl(158, 54%, 18%);
       }
       &.--color {
         border-radius: 8px;
@@ -116,5 +118,56 @@ body {
         width: 17px;
       }
     }
+  }
+}
+
+@media (max-width: 375px) {
+  .card-ctn {
+    margin: 2em 1em;
+    flex-direction: column;
+
+    &__img {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 12px;
+      height: 250px;
+      width: 100%;
+    }
+
+    &__right-ctn {
+      padding: 1.5em;
+      border-bottom-left-radius: 12px;
+      
+      border-top-right-radius: 0px;
+      &__title-1 {
+        margin-top: 0px;
+        font-size: 0.8em;
+      }
+      &__title-2 {
+        font-size: 2em;
+      }
+      &__desc-1 {
+        font-size: 1em;
+        margin: 1em 0;
+      }
+      &__cost-ctn {
+        &__cost {
+          font-size: 2em;
+        }
+      }
+
+      &__add-btn{
+        margin-top: 1em;
+        padding: 1em 2em;
+
+        .--text{
+          font-size: .9em;
+        }
+      }
+    }
+  }
+
+  .attribution{
+    font-size: .7em;
   }
 }
