@@ -1,3 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -5,4 +19,68 @@
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+}
+
+.main-ctn {
+  background: hsl(30deg, 38%, 92%);
+}
+
+.card-ctn {
+  display: flex;
+  justify-content: center;
+}
+.card-ctn__img {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  max-width: 350px;
+}
+.card-ctn__right-ctn {
+  flex: 1;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  max-width: 350px;
+  background: white;
+  padding: 2em;
+}
+.card-ctn__right-ctn__cost-ctn {
+  align-items: center;
+  gap: 1.5em;
+  display: flex;
+  font-family: "Montserrat";
+}
+.card-ctn__right-ctn__cost-ctn__cost {
+  font-family: "Fraunces";
+  font-size: 2.4em;
+}
+.card-ctn__right-ctn__cost-ctn__cost.--color {
+  color: hsl(158deg, 36%, 37%);
+}
+.card-ctn__right-ctn__cost-ctn__discounted {
+  text-decoration: line-through;
+}
+.card-ctn__right-ctn__cost-ctn__discounted.--color {
+  color: hsl(228deg, 12%, 48%);
+}
+.card-ctn__right-ctn__add-btn {
+  margin-top: 2em;
+  padding: 1.3em 2em;
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.card-ctn__right-ctn__add-btn.--color {
+  border-radius: 8px;
+  border: none;
+  background-color: hsl(158deg, 36%, 37%);
+}
+.card-ctn__right-ctn__add-btn .--text {
+  color: white;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.card-ctn__right-ctn__add-btn .--size {
+  width: 17px;
 }/*# sourceMappingURL=product-card.css.map */
