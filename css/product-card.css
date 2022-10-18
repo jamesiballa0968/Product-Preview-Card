@@ -14,6 +14,8 @@ body {
 }
 
 .attribution {
+  font-family: "Montserrat";
+  margin: 20px 0px;
   font-size: 11px;
   text-align: center;
 }
@@ -33,6 +35,8 @@ body {
 .card-ctn__img {
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 350px;
 }
 .card-ctn__right-ctn {
@@ -107,4 +111,47 @@ body {
 }
 .card-ctn__right-ctn__add-btn .--size {
   width: 17px;
+}
+
+@media (max-width: 375px) {
+  .card-ctn {
+    margin: 2em 1em;
+    flex-direction: column;
+  }
+  .card-ctn__img {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 12px;
+    height: 250px;
+    width: 100%;
+  }
+  .card-ctn__right-ctn {
+    padding: 1.5em;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0px;
+  }
+  .card-ctn__right-ctn__title-1 {
+    margin-top: 0px;
+    font-size: 0.8em;
+  }
+  .card-ctn__right-ctn__title-2 {
+    font-size: 2em;
+  }
+  .card-ctn__right-ctn__desc-1 {
+    font-size: 1em;
+    margin: 1em 0;
+  }
+  .card-ctn__right-ctn__cost-ctn__cost {
+    font-size: 2em;
+  }
+  .card-ctn__right-ctn__add-btn {
+    margin-top: 1em;
+    padding: 1em 2em;
+  }
+  .card-ctn__right-ctn__add-btn .--text {
+    font-size: 0.9em;
+  }
+  .attribution {
+    font-size: 0.7em;
+  }
 }/*# sourceMappingURL=product-card.css.map */
