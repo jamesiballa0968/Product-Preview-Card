@@ -13,6 +13,8 @@
 }
 
 body {
+  
+  background: hsl(30, 38%, 92%);
   font-size: 0.9rem;
 }
 //BODY
@@ -23,12 +25,14 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-.main-ctn {
-  background: hsl(30, 38%, 92%);
-}
+
 .card-ctn {
   display: flex;
-  justify-content: center;
+  max-width: fit-content;
+  margin: auto; 
+  margin-top: 20vh;
+
+  
   &__img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -41,6 +45,26 @@ body {
     max-width: 350px;
     background: white;
     padding: 2em;
+
+    &__title-1 {
+      margin: 1em 0;
+      font-family: "Montserrat";
+      font-weight: 500;
+      letter-spacing: 6px;
+      color: hsl(228, 12%, 48%);
+    }
+    &__title-2 {
+      color: hsl(212, 21%, 14%);
+      font-family: "Fraunces";
+      font-size: 2.7em;
+    }
+    &__desc-1 {
+      color: hsl(228, 12%, 48%);
+      line-height: 1.6em;
+      margin: 1.7em 0;
+      font-family: "Montserrat";
+      font-size: 1.2em;
+    }
     &__cost-ctn {
       align-items: center;
       gap: 1.5em;
@@ -62,6 +86,7 @@ body {
         }
       }
     }
+
     &__add-btn {
       margin-top: 2em;
       padding: 1.3em 2em;
@@ -70,7 +95,11 @@ body {
       gap: 1em;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
 
+      &.--hover:hover {
+        background:hsl(158, 54%, 18%) ;
+      }
       &.--color {
         border-radius: 8px;
         border: none;
